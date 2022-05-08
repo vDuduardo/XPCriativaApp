@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudio/XPCriativaApp/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.21686746987951808" />
+        <entry key="..\:/AndroidStudio/XPCriativaApp/app/src/main/res/layout-w936dp/activity_login.xml" value="0.25239071038251365" />
+        <entry key="..\:/AndroidStudio/XPCriativaApp/app/src/main/res/layout/activity_login.xml" value="0.33469202898550726" />
         <entry key="..\:/AndroidStudio/XPCriativaApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
     </option>

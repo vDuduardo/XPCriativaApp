@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">XPCriativaApp</string>
+    <string name="field_email">Email Address</string>
+    <string name="field_pwd">Password</string>
+    <string name="field_login">Login</string>
 </resources>

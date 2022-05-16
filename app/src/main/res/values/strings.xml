@@ -3,4 +3,6 @@
     <string name="field_email">Email Address</string>
     <string name="field_pwd">Password</string>
     <string name="field_login">Login</string>
+    <string name="string_create_account">Crie sua conta agora!</string>
+    <string name="string_pwd_recovery">Esqueci minha senha</string>
 </resources>

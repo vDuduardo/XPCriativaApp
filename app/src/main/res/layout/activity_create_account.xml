@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CreateAccountActivity">
+
+    <EditText
+        android:id="@+id/textBoxEmailCreateAccount"
+        android:layout_width="342dp"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="242dp"
+        android:background="@drawable/custom_textbox_login"
+        android:drawableStart="@drawable/vector_email"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/field_email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_hint">
+    </EditText>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/togglePasswordLayout"
+        android:layout_width="342dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textBoxEmailCreateAccount"
+        app:passwordToggleEnabled="true">
+
+
+        <EditText
+            android:id="@+id/passwordFieldCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/custom_textbox_login"
+            android:drawableStart="@drawable/vector_key"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TogglePasswordLayout2"
+        android:layout_width="342dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/togglePasswordLayout"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/passwordFieldCreateAccount2"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/custom_textbox_login"
+            android:drawableStart="@drawable/vector_key"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/repeat_password"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>

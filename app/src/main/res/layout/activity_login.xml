@@ -73,7 +73,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/ShowHidePasswordLayout"
         android:layout_width="342dp"
-        android:layout_height="65dp"
+        android:layout_height="80dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         app:layout_constraintBottom_toTopOf="@+id/textViewCreateAccount"
@@ -87,7 +87,7 @@
         <EditText
             android:id="@+id/passwordField"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="65dp"
             android:background="@drawable/custom_textbox_login"
             android:drawableStart="@drawable/vector_key"
             android:drawablePadding="12dp"

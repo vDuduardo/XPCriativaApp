@@ -9,9 +9,11 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import java.util.HashMap;
 
+import br.xpcriativa.app.database.Accounts;
+
 public class LoginActivity extends Activity {
 
-    HashMap<String, String> logins = new HashMap<>();
+
     private TextView createAccount;
     private TextView forgotPassword;
 
@@ -20,17 +22,16 @@ public class LoginActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        createLogins();
+        Accounts logins = new Accounts();
         Button loginButton = findViewById(R.id.buttonLogin);
 
         loginButton.setOnClickListener(v -> {
             String email = ((TextView) findViewById(R.id.textBoxEmailLogin)).getText().toString();
             String password = ((TextView) findViewById(R.id.passwordField)).getText().toString();
-            String pwd = logins.getOrDefault(email, "");
 
             if(email.isEmpty() || password.isEmpty())
                 Toast.makeText(LoginActivity.this, "Insira um login ou senha válidos", Toast.LENGTH_SHORT).show();
-            else if(logins.containsKey(email) && password.equals(pwd)){
+            else if(logins.isValidLogin(email, password)){
                 Toast.makeText(LoginActivity.this, "Login Bem Sucedido", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
@@ -42,25 +43,16 @@ public class LoginActivity extends Activity {
         createAccount = findViewById(R.id.textViewCreateAccount);
 
         createAccount.setOnClickListener(v -> {
-//            Intent intent = new Intent(this, CreateAccountActivity.class);
-            Toast.makeText(LoginActivity.this, "Ainda n tem tela de criar conta", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, CreateAccountActivity.class);
+            startActivity(intent);
         });
 
         forgotPassword = findViewById(R.id.textViewRecoverAccount);
 
         forgotPassword.setOnClickListener(v -> {
-//            Intent intent = new Intent(this, CreateAccountActivity.class);
+//            Intent intent = new Intent(this, ForgotPasswordActivity.class);
+//            startActivity(intent);
             Toast.makeText(LoginActivity.this, "Ainda n tem tela de recuperar senha", Toast.LENGTH_SHORT).show();
         });
-
-
-    }
-
-    private void createLogins(){
-        logins.put("felipe@gmail.com", "123");
-        logins.put("dudu@gmail.com", "123");
-        logins.put("ulissera@gmail.com", "123");
-        logins.put("marco@gmail.com", "123");
-        logins.put("adm", "adm");
     }
 }

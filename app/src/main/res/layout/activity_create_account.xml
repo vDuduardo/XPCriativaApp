@@ -11,7 +11,7 @@
         android:layout_width="342dp"
         android:layout_height="65dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="242dp"
+        android:layout_marginTop="232dp"
         android:background="@drawable/custom_textbox_login"
         android:drawableStart="@drawable/vector_email"
         android:drawablePadding="12dp"
@@ -69,5 +69,20 @@
             android:textColor="@color/black"
             android:textColorHint="@color/gray_hint" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonCreateAccount"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/TogglePasswordLayout2"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/custom_button_login"
+        android:text="@string/create_account"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp">
+
+    </Button>
 
 </RelativeLayout>

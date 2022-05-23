@@ -3,21 +3,16 @@ package br.xpcriativa.app;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.Nullable;
-
 import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Map;
 
 public class LoginActivity extends Activity {
 
     HashMap<String, String> logins = new HashMap<>();
-    private TextView createAccout;
+    private TextView createAccount;
     private TextView forgotPassword;
 
     @Override
@@ -26,7 +21,7 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.activity_login);
 
         createLogins();
-        Button loginButton = (Button) findViewById(R.id.buttonLogin);
+        Button loginButton = findViewById(R.id.buttonLogin);
 
         loginButton.setOnClickListener(v -> {
             String email = ((TextView) findViewById(R.id.textBoxEmailLogin)).getText().toString();
@@ -44,9 +39,9 @@ public class LoginActivity extends Activity {
                 Toast.makeText(LoginActivity.this, "Email ou Senha Incorretos", Toast.LENGTH_SHORT).show();
         });
 
-        createAccout = findViewById(R.id.textViewCreateAccount);
+        createAccount = findViewById(R.id.textViewCreateAccount);
 
-        createAccout.setOnClickListener(v -> {
+        createAccount.setOnClickListener(v -> {
 //            Intent intent = new Intent(this, CreateAccountActivity.class);
             Toast.makeText(LoginActivity.this, "Ainda n tem tela de criar conta", Toast.LENGTH_SHORT).show();
         });

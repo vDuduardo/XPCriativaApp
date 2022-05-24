@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -14,7 +13,7 @@
         android:background="@drawable/custom_button_login"
         android:text="@string/field_login"
         android:textAllCaps="false"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,18 +36,18 @@
         android:inputType="textEmailAddress"
         android:paddingStart="10dp"
         android:textColor="@color/black"
-        android:textColorHint="#858585"
+        android:textColorHint="@color/gray_hint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.449"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/textViewCreateAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/string_create_account"
-        android:textColor="#7D4C85"
+        android:textColor="@color/text_color_purple"
         android:textSize="16dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/string_pwd_recovery"
-        android:textColor="#7D4C85"
+        android:textColor="@color/text_color_purple"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,7 +95,7 @@
             android:inputType="textPassword"
             android:paddingStart="10dp"
             android:textColor="@color/black"
-            android:textColorHint="#858585" />
+            android:textColorHint="@color/gray_hint" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!--    <com.google.android.material.textfield.TextInputEditText-->

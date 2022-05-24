@@ -78,7 +78,7 @@
         android:layout_height="70dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/TogglePasswordLayout2"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="90dp"
         android:background="@drawable/custom_button_login"
         android:text="@string/create_account"
         android:textAllCaps="false"
@@ -88,7 +88,7 @@
     </Button>
 
     <TextView
-        android:id="@+id/textViewCreateAccount"
+        android:id="@+id/textViewDoLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/do_login"

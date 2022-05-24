@@ -13,6 +13,8 @@ import br.xpcriativa.app.database.Accounts;
 
 public class CreateAccountActivity extends Activity {
 
+    private TextView signIn;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +40,13 @@ public class CreateAccountActivity extends Activity {
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
             }
+
+            signIn = findViewById(R.id.textViewDoLogin);
+
+            signIn.setOnClickListener(v1 -> {
+                Intent intent = new Intent(this, LoginActivity.class);
+                startActivity(intent);
+            });
         });
     }
 

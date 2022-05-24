@@ -34,6 +34,12 @@
             android:exported="false">
 
         </activity>
+
+        <activity
+            android:name=".ForgotPasswordActivity">
+
+        </activity>
+
     </application>
 
 </manifest>

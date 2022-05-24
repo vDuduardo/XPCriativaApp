@@ -50,9 +50,8 @@ public class LoginActivity extends Activity {
         forgotPassword = findViewById(R.id.textViewRecoverAccount);
 
         forgotPassword.setOnClickListener(v -> {
-//            Intent intent = new Intent(this, ForgotPasswordActivity.class);
-//            startActivity(intent);
-            Toast.makeText(LoginActivity.this, "Ainda n tem tela de recuperar senha", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, ForgotPasswordActivity.class);
+            startActivity(intent);
         });
     }
 }

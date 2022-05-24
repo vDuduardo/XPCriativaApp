@@ -9,4 +9,5 @@
     <string name="password">Digite a senha</string>
     <string name="create_account">Criar Conta</string>
     <string name="do_login">Ja possui uma conta? Faça Login</string>
+    <string name="recover_password">Recuperar senha</string>
 </resources>

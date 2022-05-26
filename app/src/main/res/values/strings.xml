@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">XPCriativaApp</string>
+    <string name="field_email">Email Address</string>
+    <string name="field_pwd">Password</string>
+    <string name="field_login">Login</string>
+    <string name="string_create_account">Crie sua conta agora!</string>
+    <string name="string_pwd_recovery">Esqueci minha senha</string>
+    <string name="repeat_password">Digite a senha Novamente</string>
+    <string name="password">Digite a senha</string>
+    <string name="create_account">Criar Conta</string>
+    <string name="do_login">Ja possui uma conta? Faça Login</string>
 </resources>

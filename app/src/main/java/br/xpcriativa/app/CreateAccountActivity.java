@@ -37,7 +37,7 @@ public class CreateAccountActivity extends Activity {
             else{
                 logins.insertLogin(email, password);
                 Toast.makeText(CreateAccountActivity.this, "Conta criada com Sucesso", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this, MainActivity.class);
+                Intent intent = new Intent(this, PostLoginActivity.class);
                 startActivity(intent);
             }
 

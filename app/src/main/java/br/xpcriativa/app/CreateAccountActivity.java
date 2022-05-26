@@ -21,12 +21,12 @@ public class CreateAccountActivity extends Activity {
         setContentView(R.layout.activity_create_account);
 
         Accounts logins = new Accounts();
-        Button createAccountButton = findViewById(R.id.buttonCreateAccount);
+        Button createAccountButton = findViewById(R.id.buttonCreateUser);
 
         createAccountButton.setOnClickListener(v -> {
-            String email = ((TextView) findViewById(R.id.textBoxEmailCreateAccount)).getText().toString();
-            String password = ((TextView) findViewById(R.id.passwordFieldCreateAccount)).getText().toString();
-            String password2 = ((TextView) findViewById(R.id.passwordFieldCreateAccount2)).getText().toString();
+            String email = ((TextView) findViewById(R.id.editTextEmail_CreateUser)).getText().toString();
+            String password = ((TextView) findViewById(R.id.editTextFirstPassword_CreateUser)).getText().toString();
+            String password2 = ((TextView) findViewById(R.id.editTextSecondPassword_CreateUser)).getText().toString();
 
             if (!isPasswordEqual(password, password2))
                 Toast.makeText(CreateAccountActivity.this, "Senhas não coincidem", Toast.LENGTH_SHORT).show();

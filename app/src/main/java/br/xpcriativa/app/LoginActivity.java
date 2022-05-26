@@ -33,7 +33,7 @@ public class LoginActivity extends Activity {
                 Toast.makeText(LoginActivity.this, "Insira um login ou senha válidos", Toast.LENGTH_SHORT).show();
             else if(logins.isValidLogin(email, password)){
                 Toast.makeText(LoginActivity.this, "Login Bem Sucedido", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this, MainActivity.class);
+                Intent intent = new Intent(this, PostLoginActivity.class);
                 startActivity(intent);
             }
             else
@@ -50,9 +50,8 @@ public class LoginActivity extends Activity {
         forgotPassword = findViewById(R.id.textViewRecoverAccount);
 
         forgotPassword.setOnClickListener(v -> {
-//            Intent intent = new Intent(this, ForgotPasswordActivity.class);
-//            startActivity(intent);
-            Toast.makeText(LoginActivity.this, "Ainda n tem tela de recuperar senha", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, ForgotPasswordActivity.class);
+            startActivity(intent);
         });
     }
 }

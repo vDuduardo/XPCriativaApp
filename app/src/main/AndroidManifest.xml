@@ -24,10 +24,14 @@
 
         <activity
             android:name=".CreateAccountActivity"
-            android:exported="false"/>
+            android:exported="true"/>
 
         <activity
-            android:name=".ForgotPasswordActivity"/>
+            android:name=".ForgotPasswordActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".CreateUserActivity"
+            android:exported="true"/>
 
         <activity
             android:name=".PostLoginActivity"/>

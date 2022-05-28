@@ -16,6 +16,7 @@ public class LoginActivity extends Activity {
 
     private TextView createAccount;
     private TextView forgotPassword;
+    private UserDAO userDAO;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -25,13 +26,15 @@ public class LoginActivity extends Activity {
         Accounts logins = new Accounts();
         Button loginButton = findViewById(R.id.buttonLogin);
 
+        userDAO = new UserDAO(LoginActivity.this);
+
         loginButton.setOnClickListener(v -> {
             String email = ((TextView) findViewById(R.id.textBoxEmailLogin)).getText().toString();
             String password = ((TextView) findViewById(R.id.passwordField)).getText().toString();
 
             if(email.isEmpty() || password.isEmpty())
                 Toast.makeText(LoginActivity.this, "Insira um login ou senha válidos", Toast.LENGTH_SHORT).show();
-            else if(logins.isValidLogin(email, password)){
+            else if(userDAO.isValidLogin(email, password)){
                 Toast.makeText(LoginActivity.this, "Login Bem Sucedido", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, PostLoginActivity.class);
                 startActivity(intent);
@@ -41,11 +44,15 @@ public class LoginActivity extends Activity {
         });
 
         createAccount = findViewById(R.id.textViewCreateAccount);
+        try{
+            createAccount.setOnClickListener(v -> {
+                Intent intent = new Intent(this, CreateUserActivity.class);
+                startActivity(intent);
+            });
 
-        createAccount.setOnClickListener(v -> {
-            Intent intent = new Intent(this, CreateAccountActivity.class);
-            startActivity(intent);
-        });
+        }catch(Exception e){
+            System.out.println("EXCEPTION: " + e);
+        }
 
         forgotPassword = findViewById(R.id.textViewRecoverAccount);
 

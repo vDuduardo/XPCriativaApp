@@ -2,7 +2,6 @@ package br.xpcriativa.app;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -16,7 +15,6 @@ public class CreateUserActivity extends Activity {
     private String password;
     private String password2;
     private UserDAO userDAO;
-    private SQLiteDatabase dbRead;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -46,8 +44,7 @@ public class CreateUserActivity extends Activity {
 
                 Toast.makeText(CreateUserActivity.this, "Conta criada com Sucesso", Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(this, PostLoginActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(this, PostLoginActivity.class));
             }
         });
 

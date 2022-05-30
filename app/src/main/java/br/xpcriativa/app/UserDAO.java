@@ -5,7 +5,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-
 public class UserDAO {
 
     private DBHandler dbHandler;
@@ -31,7 +30,6 @@ public class UserDAO {
         String query = String.format("select * from user where email = '%s'", email);
         Cursor cursor = db.rawQuery(query, null);
 
-        System.out.println("ANTES DE VERIFICAR SE É NULO");
         if(cursor.moveToFirst()) {
             db.close();
             return true;
@@ -56,6 +54,7 @@ public class UserDAO {
             db.close();
             return true;
         }
+        db.close();
         return false;
     }
 }

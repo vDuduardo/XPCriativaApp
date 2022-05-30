@@ -7,12 +7,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.Nullable;
-import java.util.HashMap;
-
-import br.xpcriativa.app.database.Accounts;
 
 public class LoginActivity extends Activity {
-
 
     private TextView createAccount;
     private TextView forgotPassword;
@@ -23,7 +19,6 @@ public class LoginActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Accounts logins = new Accounts();
         Button loginButton = findViewById(R.id.buttonLogin);
 
         userDAO = new UserDAO(LoginActivity.this);
@@ -36,8 +31,7 @@ public class LoginActivity extends Activity {
                 Toast.makeText(LoginActivity.this, "Insira um login ou senha válidos", Toast.LENGTH_SHORT).show();
             else if(userDAO.isValidLogin(email, password)){
                 Toast.makeText(LoginActivity.this, "Login Bem Sucedido", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this, PostLoginActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(this, PostLoginActivity.class));
             }
             else
                 Toast.makeText(LoginActivity.this, "Email ou Senha Incorretos", Toast.LENGTH_SHORT).show();
@@ -46,8 +40,7 @@ public class LoginActivity extends Activity {
         createAccount = findViewById(R.id.textViewCreateAccount);
         try{
             createAccount.setOnClickListener(v -> {
-                Intent intent = new Intent(this, CreateUserActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(this, CreateUserActivity.class));
             });
 
         }catch(Exception e){
@@ -57,8 +50,7 @@ public class LoginActivity extends Activity {
         forgotPassword = findViewById(R.id.textViewRecoverAccount);
 
         forgotPassword.setOnClickListener(v -> {
-            Intent intent = new Intent(this, ForgotPasswordActivity.class);
-            startActivity(intent);
+            startActivity(new Intent(this, ForgotPasswordActivity.class));
         });
     }
 }

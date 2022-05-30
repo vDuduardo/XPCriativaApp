@@ -1,6 +1,5 @@
 package br.xpcriativa.app;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,9 +18,7 @@ public class MainActivity extends Activity {
         dbHandler.createDatabase();
 
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            Intent intent = new Intent(this, LoginActivity.class);
-            startActivity(intent);
+            startActivity(new Intent(this, LoginActivity.class));
         }, 3000);
-
     }
 }

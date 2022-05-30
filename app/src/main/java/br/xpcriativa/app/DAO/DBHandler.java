@@ -1,4 +1,4 @@
-package br.xpcriativa.app;
+package br.xpcriativa.app.DAO;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

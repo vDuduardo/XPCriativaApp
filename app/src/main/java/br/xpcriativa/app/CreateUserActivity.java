@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
+import br.xpcriativa.app.DAO.UserDAO;
+
 public class CreateUserActivity extends Activity {
 
     private String email;

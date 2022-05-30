@@ -20,8 +20,7 @@
         android:inputType="textEmailAddress"
         android:paddingStart="10dp"
         android:textColor="@color/black"
-        android:textColorHint="@color/gray_hint">
-    </EditText>
+        android:textColorHint="@color/gray_hint"></EditText>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/togglePasswordLayout"
@@ -76,8 +75,8 @@
         android:id="@+id/buttonCreateUser"
         android:layout_width="350dp"
         android:layout_height="70dp"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/TogglePasswordLayout2"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="90dp"
         android:background="@drawable/custom_button_login"
         android:text="@string/create_account"

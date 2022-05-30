@@ -20,8 +20,7 @@ public class ForgotPasswordActivity extends Activity {
 
         Button recoverPassword = findViewById(R.id.buttonRecoverPassword);
 
-        recoverPassword.setOnClickListener(v -> {
-            Toast.makeText(ForgotPasswordActivity.this, "Código de recuperação enviado", Toast.LENGTH_SHORT).show();
-        });
+        recoverPassword.setOnClickListener(v ->
+                Toast.makeText(ForgotPasswordActivity.this, "Código de recuperação enviado", Toast.LENGTH_SHORT).show());
     }
 }

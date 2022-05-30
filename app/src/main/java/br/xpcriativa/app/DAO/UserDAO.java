@@ -1,9 +1,12 @@
-package br.xpcriativa.app;
+package br.xpcriativa.app.DAO;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+
+import br.xpcriativa.app.DAO.DBHandler;
+import br.xpcriativa.app.User;
 
 public class UserDAO {
 

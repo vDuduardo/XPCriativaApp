@@ -8,6 +8,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.Nullable;
 
+import br.xpcriativa.app.DAO.UserDAO;
+
 public class LoginActivity extends Activity {
 
     private TextView createAccount;

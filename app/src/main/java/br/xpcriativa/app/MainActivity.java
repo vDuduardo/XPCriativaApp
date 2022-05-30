@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 
+import br.xpcriativa.app.DAO.DBHandler;
+
 public class MainActivity extends Activity {
     private DBHandler dbHandler;
 

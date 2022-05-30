@@ -21,6 +21,8 @@ public class MainActivity extends Activity {
 
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
             startActivity(new Intent(this, LoginActivity.class));
+            finish();
         }, 3000);
+
     }
 }

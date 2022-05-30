@@ -48,6 +48,12 @@ public class CreateUserActivity extends Activity {
             }
         });
 
+        TextView signIn = findViewById(R.id.textViewDoLogin);
+
+        signIn.setOnClickListener(v -> {
+            startActivity(new Intent(this, LoginActivity.class));
+        });
+
     }
 
     private boolean isPasswordEqual(String pwd, String pwd2){

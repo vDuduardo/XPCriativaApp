@@ -66,6 +66,6 @@ public class LoginActivity extends Activity {
         Toast.makeText(this, "Pressione novamente para sair", Toast.LENGTH_SHORT).show();
         isBackPressed = true;
 
-        new Handler(Looper.getMainLooper()).postDelayed(() -> isBackPressed = false, 2000);
+        new Handler(Looper.getMainLooper()).postDelayed(() -> isBackPressed = false, 3000);
     }
 }

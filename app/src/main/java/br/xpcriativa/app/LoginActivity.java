@@ -13,10 +13,6 @@ import androidx.annotation.Nullable;
 import br.xpcriativa.app.DAO.UserDAO;
 
 public class LoginActivity extends Activity {
-
-    private TextView createAccount;
-    private TextView forgotPassword;
-    private UserDAO userDAO;
     private boolean isBackPressed = false;
 
     @Override
@@ -26,7 +22,7 @@ public class LoginActivity extends Activity {
 
         Button loginButton = findViewById(R.id.buttonLogin);
 
-        userDAO = new UserDAO(this);
+        UserDAO userDAO = new UserDAO(this);
 
         loginButton.setOnClickListener(v -> {
             String email = ((TextView) findViewById(R.id.textBoxEmailLogin)).getText().toString();
@@ -42,17 +38,10 @@ public class LoginActivity extends Activity {
                 Toast.makeText(LoginActivity.this, "Email ou Senha Incorretos", Toast.LENGTH_SHORT).show();
         });
 
-        createAccount = findViewById(R.id.textViewCreateAccount);
-        try{
-            createAccount.setOnClickListener(v -> {
-                startActivity(new Intent(this, CreateUserActivity.class));
-            });
+        TextView createAccount = findViewById(R.id.textViewCreateAccount);
+        createAccount.setOnClickListener(v -> startActivity(new Intent(this, CreateUserActivity.class)));
 
-        }catch(Exception e){
-            System.out.println("EXCEPTION: " + e);
-        }
-
-        forgotPassword = findViewById(R.id.textViewRecoverAccount);
+        TextView forgotPassword = findViewById(R.id.textViewRecoverAccount);
 
         forgotPassword.setOnClickListener(v -> startActivity(new Intent(this, ForgotPasswordActivity.class)));
     }

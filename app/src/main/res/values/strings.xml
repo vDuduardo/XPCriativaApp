@@ -1,6 +1,7 @@
 <resources>
+    <string name="number_format">(__) _____ - ____</string>
     <string name="app_name">XPCriativaApp</string>
-    <string name="field_email">Email Address</string>
+    <string name="field_email">Digite seu email</string>
     <string name="field_pwd">Password</string>
     <string name="field_login">Login</string>
     <string name="string_create_account">Crie sua conta agora!</string>

@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".CreateAccountActivity">
+    tools:context=".CreateUserActivity"
+    tools:ignore="Autofill,RtlSymmetry">
 
     <EditText
         android:id="@+id/editTextEmail_CreateUser"
@@ -20,7 +21,8 @@
         android:inputType="textEmailAddress"
         android:paddingStart="10dp"
         android:textColor="@color/black"
-        android:textColorHint="@color/gray_hint"></EditText>
+        android:textColorHint="@color/gray_hint"
+         />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/togglePasswordLayout"
@@ -29,7 +31,8 @@
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/editTextEmail_CreateUser"
-        app:passwordToggleEnabled="true">
+        app:passwordToggleEnabled="true"
+        >
 
 
         <EditText
@@ -44,7 +47,8 @@
             android:inputType="textPassword"
             android:paddingStart="10dp"
             android:textColor="@color/black"
-            android:textColorHint="@color/gray_hint" />
+            android:textColorHint="@color/gray_hint"
+            tools:ignore="Autofill" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -91,8 +95,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/do_login"
-        android:textColor="@color/text_color_purple"
-        android:textSize="16dp"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/buttonCreateUser"
         android:layout_marginTop="15dp">

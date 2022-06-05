@@ -9,6 +9,11 @@
     <color name="white">#FFFFFF</color>
     <color name="gray_hint">#858585</color>
     <color name="text_color_purple">#7D4C85</color>
+    <color name="text_color2">#2B5B87</color>
+    <color name="text_color">#356FA6</color>
     <color name="splashScreen_startColor">#13293D</color>
     <color name="splashScreen_endColor">#00001B</color>
+    <color name="button_startColor">#1D558A</color>
+    <color name="button_endColor">#0D253B</color>
+    <color name="test_color">#00001B</color>
 </resources>

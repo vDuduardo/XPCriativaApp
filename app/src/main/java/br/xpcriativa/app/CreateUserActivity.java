@@ -46,7 +46,8 @@ public class CreateUserActivity extends Activity {
 
                 Toast.makeText(CreateUserActivity.this, "Conta criada com Sucesso", Toast.LENGTH_SHORT).show();
 
-                startActivity(new Intent(this, PostLoginActivity.class));
+                startActivity(new Intent(this, FormActivity.class));
+                finish();
             }
         });
 
@@ -54,6 +55,7 @@ public class CreateUserActivity extends Activity {
 
         signIn.setOnClickListener(v -> {
             startActivity(new Intent(this, LoginActivity.class));
+            finish();
         });
 
     }

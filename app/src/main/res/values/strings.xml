@@ -10,4 +10,18 @@
     <string name="create_account">Criar Conta</string>
     <string name="do_login">Ja possui uma conta? Faça Login</string>
     <string name="recover_password">Recuperar senha</string>
+    <string name="radio_button_yes">Sim</string>
+    <string name="radio_button_no">Não</string>
+    <string name="form_intro_text">Vamos fazer umas perguntinhas para você, para que seja possível recomendar o melhor dispositivo, ok?</string>
+    <string name="submit_form">Submeter Formulário</string>
+    <string name="q1">Pergunta 1</string>
+    <string name="q2">Pergunta 2</string>
+    <string name="q3">Pergunta 3</string>
+    <string name="q4">Pergunta 4</string>
+    <string name="q5">Pergunta 5</string>
+    <string name="q6">Pergunta 6</string>
+    <string name="q7">Pergunta 7</string>
+    <string name="q8">Pergunta 8</string>
+    <string name="q9">Pergunta 9</string>
+    <string name="q10">Pergunta 10</string>
 </resources>

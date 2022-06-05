@@ -16,6 +16,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
         <activity
@@ -31,6 +32,11 @@
 
         <activity
             android:name=".PostLoginActivity"/>
+
+        <activity
+            android:name=".FormActivity"
+            android:exported="true">
+        </activity>
 
     </application>
 

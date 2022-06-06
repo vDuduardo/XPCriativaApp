@@ -6,6 +6,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.widget.Toast;
 
 import br.xpcriativa.app.databinding.ActivityHomeBinding;
 import br.xpcriativa.app.fragments.HomeFragment;
@@ -14,7 +17,7 @@ import br.xpcriativa.app.fragments.ProfileFragment;
 import br.xpcriativa.app.fragments.SettingsFragment;
 
 public class HomeActivity extends AppCompatActivity {
-
+    private boolean isBackPressed = false;
     private ActivityHomeBinding binding;
 
     @Override
@@ -49,5 +52,17 @@ public class HomeActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frameLayout, fragment);
         fragmentTransaction.commit();
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(isBackPressed){
+            super.onBackPressed();
+            finish();
+        }
+        Toast.makeText(this, "Pressione novamente para sair", Toast.LENGTH_SHORT).show();
+        isBackPressed = true;
+
+        new Handler(Looper.getMainLooper()).postDelayed(() -> isBackPressed = false, 3000);
     }
 }

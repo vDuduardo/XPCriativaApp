@@ -125,7 +125,7 @@ public class FormActivity extends Activity {
 
         button.setOnClickListener(v -> {
             if(isProgressBarComplete()){
-                startActivity(new Intent(this, PostLoginActivity.class));
+                startActivity(new Intent(this, HomeActivity.class));
                 finish();
             }
             else

@@ -1,6 +1,6 @@
 <resources>
     <string name="number_format">(__) _____ - ____</string>
-    <string name="app_name">XPCriativaApp</string>
+    <string name="app_name">Phantom</string>
     <string name="field_email">Digite seu email</string>
     <string name="field_pwd">Password</string>
     <string name="field_login">Login</string>
@@ -26,4 +26,6 @@
     <string name="q9">Pergunta 9</string>
     <string name="q10">Pergunta 10</string>
     <string name="nome">José Eduardo Lino</string>
+    <string name="role">Estrela de cinema e professor nas horas vagas</string>
+    <string name="home_description">Aqui está nossas recomendações, baseadas no formulário que vc preencheu!</string>
 </resources>

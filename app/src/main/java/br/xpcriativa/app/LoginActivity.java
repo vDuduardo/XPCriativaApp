@@ -32,7 +32,7 @@ public class LoginActivity extends Activity {
                 Toast.makeText(this, "Insira um login ou senha válidos", Toast.LENGTH_SHORT).show();
             else if(userDAO.isValidLogin(email, password)){
                 Toast.makeText(this, "Login Bem Sucedido", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(this, PostLoginActivity.class));
+                startActivity(new Intent(this, HomeActivity.class));
             }
             else
                 Toast.makeText(LoginActivity.this, "Email ou Senha Incorretos", Toast.LENGTH_SHORT).show();

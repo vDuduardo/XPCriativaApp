@@ -8,51 +8,61 @@
     >
 
     <!-- TODO: Update blank fragment layout -->
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <View
-            android:id="@+id/view2"
+            android:id="@+id/viewBackground"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:background="@drawable/custom_background2"
-            app:layout_constraintBottom_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/custom_background2" />
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imageView"
-            android:layout_width="201dp"
-            android:layout_height="135dp"
-            android:src="@drawable/john_snow"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.221"
-            app:shapeAppearanceOverlay="@style/Circular" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textViewUserName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
             android:fontFamily="sans-serif-smallcaps"
             android:text="@string/nome"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="25sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.089" />
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:id="@+id/textViewUserRole"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/role"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_below="@+id/textViewUserName"
+            android:layout_centerHorizontal="true"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageViewUserImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="42dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/john_snow"
+            android:layout_below="@+id/textViewUserName"
+            app:shapeAppearanceOverlay="@style/Circular"
+            />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
 
 
 </FrameLayout>

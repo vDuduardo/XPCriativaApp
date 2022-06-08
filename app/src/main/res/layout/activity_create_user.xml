@@ -7,12 +7,26 @@
     tools:context=".CreateUserActivity"
     tools:ignore="Autofill,RtlSymmetry">
 
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewLogoC"
+        android:layout_width="164dp"
+        android:layout_height="144dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/phantom_logo"
+        />
+
+
+
     <EditText
         android:id="@+id/editTextEmail_CreateUser"
         android:layout_width="342dp"
         android:layout_height="65dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/imageViewLogoC"
         android:background="@drawable/custom_textbox_login"
         android:drawableStart="@drawable/vector_email"
         android:drawablePadding="12dp"

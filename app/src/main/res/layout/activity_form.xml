@@ -14,10 +14,10 @@
         android:layout_marginTop="15dp"
         android:ems="10"
         android:fontFamily="sans-serif-smallcaps"
-        android:text="@string/form_intro_text"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:text="@string/form_intro_text" />
 
     <com.beardedhen.androidbootstrap.BootstrapProgressBar style="?android:attr/progressBarStyleHorizontal"
         android:id="@+id/progressBar"

@@ -25,7 +25,12 @@
     <string name="q8">Pergunta 8</string>
     <string name="q9">Pergunta 9</string>
     <string name="q10">Pergunta 10</string>
-    <string name="nome">José Eduardo Lino</string>
+    <string name="nome">José Eduardo Lindo</string>
     <string name="role">Estrela de cinema e professor nas horas vagas</string>
+    <string name="email">john_snow@pucpr.edu.br</string>
+    <string name="email2">Email</string>
+    <string name="phoneNumber">41 9 8765-4321</string>
+    <string name="phoneNumber2">Telefone</string>
+    <string name="data">Suas Informações</string>
     <string name="home_description">Aqui está nossas recomendações, baseadas no formulário que vc preencheu!</string>
 </resources>
